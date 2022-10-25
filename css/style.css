@@ -1,0 +1,121 @@
+/*  ===========>  custom fonts  <========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&display=swap');
+
+/*  ===========> Custom properties / Variables <========= */
+
+:root {
+    --ff: 'Poppins', sans-serif;
+    --primary: #4e37db;
+    --primary-transparent: rgba(76, 53, 209, 0.9);
+    --primary-light: #f3f4ff;
+    --secondary: #dcd6ff;
+    --secondary-light: #f9f9ff;
+    --text: #627193;
+    --text-lighter: #818da9;
+    --dark: #00005c;
+    --light: #ebebeb;
+    --white: #ffffff;
+    --yellow: #fdb400;
+    --footer-dark: #291d6e;
+    --animate: all 0.3s ease-in-out;
+    --shadow-primary: 2px 2px 12px 2px rgba(78, 55, 219, 0.17);
+    --shadow: 2px 0px 12px 2px rgba(189, 189, 189, 0.2);
+}
+
+
+/*  ===========> Reset <========= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*  ===========> Components <========= */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*  ===========> Header <========= */
+
+.header {
+    height: 80px;
+    width: 100%;
+    background: var(--white);
+    position: fixed;
+    z-index: 10;
+}
+
+.header .container {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    height: 2.9rem;
+    min-height: 2.5rem;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: var(--animate);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active {
+    color: var(--dark);
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btns .btn,
+.mobile-icon {
+    margin-right: 0.8rem;
+}
