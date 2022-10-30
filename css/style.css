@@ -249,3 +249,99 @@
                 display: none;
             }
         }
+        /*  ===========> Hero <========= */
+        
+        .hero {
+            padding-top: 80px;
+        }
+        
+        .hero .container {
+            display: flex;
+            padding: 8rem 0rem;
+            column-gap: 5rem;
+        }
+        /* left */
+        
+        .hero__left {
+            max-width: 550px;
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        .hero__circle {
+            position: absolute;
+            top: -50px;
+            left: -15px;
+        }
+        
+        .hero__title {
+            color: var(--dark);
+            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 5vw, 3.3rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+        
+        .hero__description {
+            color: var(--text);
+            margin-bottom: 50px;
+            font-size: 1rem;
+        }
+        
+        .hero .btn--primary {
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .btn-icon {
+            margin-left: 10px;
+        }
+        /* right */
+        
+        .hero__right {
+            position: absolute;
+            right: 0;
+            top: 120px;
+        }
+        
+        .hero__img {
+            display: block;
+            position: relative;
+            right: 0;
+            top: -100px;
+            width: 700px;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        .hero__stats {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            position: absolute;
+            left: -120px;
+            bottom: 80px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .how {
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            border-radius: 10px 0 0 0;
+            padding: 1rem;
+            position: absolute;
+            right: 0;
+            bottom: 100px;
+            cursor: pointer;
+            animation: bounce 0.75s infinite;
+        }
+        
+        .how-icon {
+            font-size: 27px;
+            margin-left: 10px;
+        }
