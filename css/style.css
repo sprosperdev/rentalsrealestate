@@ -86,6 +86,19 @@
             background: var(--secondary);
             color: var(--dark);
         }
+        /*  ===========> Animations <========= */
+        
+        @keyframes bounce {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0px, -5px);
+            }
+            100% {
+                transform: translate(0px, -5px);
+            }
+        }
         /*  ===========> Header <========= */
         
         .header {
@@ -344,4 +357,53 @@
         .how-icon {
             font-size: 27px;
             margin-left: 10px;
+        }
+        
+        @media screen and (max-width:81.25em) {
+            .hero .container {
+                column-gap: 7rem;
+            }
+            .hero__right {
+                position: relative;
+                top: 0;
+            }
+            .hero__img {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width:68.75em) {
+            .hero .container {
+                flex-direction: column;
+            }
+            .right-content {
+                margin-top: 80px;
+            }
+            .hero__img {
+                top: -100px;
+            }
+            .hero__left {
+                max-width: 650px;
+            }
+            .how {
+                bottom: 100px;
+            }
+            .hero__stats {
+                bottom: 100px;
+                left: 0;
+                border-radius: 0 20px 0 0;
+            }
+        }
+        
+        @media screen and (max-width: 37.5em) {
+            .hero .container {
+                padding: 4rem 0;
+            }
+            .hero__stats {
+                width: calc(200px * 0.75);
+                height: calc(150px * 0.75)
+            }
+            .how {
+                padding: 0.6rem;
+            }
         }
