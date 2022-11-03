@@ -314,6 +314,22 @@ a {
 }
 
 
+@media screen and (max-width: 420px) {
+    .header .container{
+        
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .feature__title{
+        border: solid red 2px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
 /*  ===========> Hero <========= */
 
 .hero {
@@ -930,3 +946,4 @@ a {
         display: none;
     }
 }
+
