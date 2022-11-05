@@ -314,6 +314,16 @@ a {
 }
 
 
+/* @media screen and (max-width: 644px) {
+    .mobile-icon {
+        display: block;
+    }
+    .nav-btns .btn {
+        display: none;
+    }
+} */
+
+
 /*  ===========> Hero <========= */
 
 .hero {
@@ -466,6 +476,12 @@ a {
     }
 }
 
+@media screen and (max-width: 387px) {
+    .hero {
+        width: 387px;
+    }
+}
+
 
 /*  ===========> Agents <========= */
 
@@ -584,6 +600,12 @@ a {
     }
     .agents-card {
         max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .agents {
+        width: 387px;
     }
 }
 
@@ -779,6 +801,15 @@ a {
         left: 0;
         top: 0;
         border-radius: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .feature {
+        padding: 0;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 
