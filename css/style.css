@@ -811,6 +811,13 @@ a {
         justify-content: center;
         align-items: center;
     }
+    .hero__img {
+        max-width: 100%;
+    }
+    .feature__img {
+        border: solid red;
+        max-width: 100%;
+    }
 }
 
 
